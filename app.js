@@ -97,7 +97,7 @@ function minimum(arr){
         if(arr[i]<min)
             min=arr[i]
     }
-    return min
+    return min;
 }
 
 
