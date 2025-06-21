@@ -55,7 +55,6 @@
 // },4000)
 // console.log("hello5");
 
-let arr=[10,20,30,40,50,43];
 // let print = function(el){
 //     console.log(el);
 // }
@@ -68,7 +67,38 @@ let arr=[10,20,30,40,50,43];
 //     return el*el
 // })
 // console.log(doubleArray)
-let trueArray = arr.filter(function(el){
-    return el%2!=0
-})
-console.log(trueArray);
+// let trueArray = arr.filter(function(el){
+//     return el%2!=0
+// })
+// console.log(trueArray);
+// function name(arr) {
+//     let max = arr[0];
+//     for( let i = 1;i<arr.length;i++){
+//     if(arr[i]<max){
+//         arr[i]=max;
+//     }
+// }
+// return max;
+// }
+let arr=[10,20,30,5,40,50,43];
+// function name(arr) {
+//     let max = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             // arr[i] = max;
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+function minimum(arr){
+    var min = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i]<min)
+            min=arr[i]
+    }
+    return min
+}
+
+
+
