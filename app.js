@@ -36,7 +36,6 @@
 //     console.log(err);
 // }
 // console.log("hello4");
-// console.log("hello5");
 // console.log("hello6");
 //arrow function without return not necessary
 //looks correct in syntax but won’t return anything, because in JavaScript, a function with curly braces {} needs an explicit return statement.
@@ -99,6 +98,7 @@ function minimum(arr){
     }
     return min;
 }
+
 
 
 
