@@ -26,7 +26,6 @@
 // let num = Math.random()*100;
 // num = Math.floor(num);//remove points
 // console.log(num)
-
 // console.log("hello1");
 // console.log("hello2");
 // console.log("hello3");
