@@ -79,7 +79,7 @@
 // }
 // return max;
 // }
-let arr=[10,20,30,5,40,50,43];
+// let arr=[10,20,30,5,40,50,43];
 // function name(arr) {
 //     let max = arr[0];
 //     for (let i = 1; i < arr.length; i++) {
@@ -90,15 +90,20 @@ let arr=[10,20,30,5,40,50,43];
 //     }
 //     return max;
 // }
-function minimum(arr){
-    var min = arr[0];
-    for(let i = 1; i < arr.length; i++){
-        if(arr[i]<min)
-            min=arr[i]
-    }
-    return min;
+// function minimum(arr){
+//     var min = arr[0];
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i]<min)
+//             min=arr[i]
+//     }
+//     return min;
+// }
+
+
+let btn = document.querySelector("button");
+console.dir(btn);
+btn.onmouseenter=function(){
+    console.log("shriyansh singh patel");
+    
 }
-
-
-
 
