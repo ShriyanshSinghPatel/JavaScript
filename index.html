@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GITHUB</title>
+    <title>DOM Practice Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+    <header>
+        <h1>Welcome to DOM Practice Page</h1>
+        <nav>
+            <a href="#section1">Go to Section 1</a> |
+            <a href="#section2">Go to Section 2</a> |
+            <a href="https://www.google.com" target="_blank">External Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>Section 1: Images</h2>
+            <img src="https://placebear.com/200/200" alt="Placeholder 1">
+            <img src="https://picsum.photos/seed/picsum/200/200" alt="Placeholder 2">
+        </section>
+
+        <section id="section2">
+            <h2>Section 2: Text and Paragraphs</h2>
+            <p>This is a paragraph for DOM practice. You can change its text, color, or hide it using JavaScript.</p>
+            <p class="highlight">This paragraph has a special class. Try to target it with JS or CSS.</p>
+            <a href="#top" id="backToTop">Back to top</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DOM Practice Page</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
