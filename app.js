@@ -105,18 +105,27 @@
 //     console.log("shriyansh singh patel");
     
 // }
-function outer() {
-  let count = 0;
-//   console.log("shriyansh");
-  return function inner() {
-    count++;
-    console.log(count);
-  };
+// function outer() {
+//   let count = 0;
+// //   console.log("shriyansh");
+//   return function inner() {
+//     count++;
+//     console.log(count);
+//   };
+// }
+// // const counter = outer();
+// // counter(); // 1
+// // counter(); // 2
+// var counter = outer();
+// var counter =  outer();
+// counter();
+function changeColor(color,delay){
+  setTimeout(()=>{
+  h1.style.color=color;
+  },delay)
 }
-// const counter = outer();
-// counter(); // 1
-// counter(); // 2
-var counter = outer();
-var counter =  outer();
-counter();
+let h1 = document.querySelector("h1")
+changeColor("red",1000);
+changeColor("yellow",2000);
+changeColor("green",3000);
 
