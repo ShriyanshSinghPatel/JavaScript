@@ -99,10 +99,24 @@
 // }
 
 
-let btn = document.querySelector("button");
-console.dir(btn);
-btn.onmouseenter=function(){
-    console.log("shriyansh singh patel");
+// let btn = document.querySelector("button");
+// console.dir(btn);
+// btn.onmouseenter=function(){
+//     console.log("shriyansh singh patel");
     
+// }
+function outer() {
+  let count = 0;
+//   console.log("shriyansh");
+  return function inner() {
+    count++;
+    console.log(count);
+  };
 }
+// const counter = outer();
+// counter(); // 1
+// counter(); // 2
+var counter = outer();
+var counter =  outer();
+counter();
 
