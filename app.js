@@ -119,13 +119,25 @@
 // var counter = outer();
 // var counter =  outer();
 // counter();
-function changeColor(color,delay){
-  setTimeout(()=>{
-  h1.style.color=color;
-  },delay)
+// function changeColor(color,delay){
+//   setTimeout(()=>{
+//   h1.style.color=color;
+//   },delay)
+// }
+// let h1 = document.querySelector("h1")
+// changeColor("red",1000);
+// changeColor("yellow",2000);
+// changeColor("green",3000);
+function savetoDB(data,success,failure){
+  let internetspeed=Math.floor(Math.random()*10);
+  if(internetspeed>4){
+    success()
+  }else{
+    failure()
+  }
 }
-let h1 = document.querySelector("h1")
-changeColor("red",1000);
-changeColor("yellow",2000);
-changeColor("green",3000);
-
+savetoDB("shriyansh",()=>{
+   console.log("good connection - Data Saved Successfully");
+},()=>{
+    console.log("bad connection - Data not Saved");
+});
