@@ -142,28 +142,31 @@
 //     console.log("bad connection - Data not Saved");
 // });
 
-function savetoDB(data){
-  return new Promise((resolve,reject)=>{
-      let internetspeed=Math.floor(Math.random()*10);
-  if(internetspeed>4){
-    resolve("data saved")
-  }else{
-    reject("week connection")
-  }
-  })
-}
-savetoDB("shriyansh")
-.then(()=>{
-  console.log("data1 savved");
-  return savetoDB("singh");
-})
-  .then(()=>{
-    console.log("data2 savved");
-    return savetoDB("patel")
-  })
-  .then(()=>{
-    console.log("data3 savved");
-  })
-.catch(()=>{
-  console.log("promise was rejected");
-})
+// function savetoDB(data){
+//   return new Promise((resolve,reject)=>{
+//       let internetspeed=Math.floor(Math.random()*10);
+//   if(internetspeed>4){
+//     resolve("data saved")
+//   }else{
+//     reject("week connection")
+//   }
+//   })
+// }
+// savetoDB("shriyansh")
+// .then(()=>{
+//   console.log("data1 savved");
+//   return savetoDB("singh");
+// })
+//   .then(()=>{
+//     console.log("data2 savved");
+//     return savetoDB("patel")
+//   })
+//   .then(()=>{
+//     console.log("data3 savved");
+//   })
+// .catch(()=>{
+//   console.log("promise was rejected");
+// })
+let jsonData = '{"fact":"Cats have 30 teeth (12 incisors, 10 premolars, 4 canines, and 4 molars), while dogs have 42. Kittens have baby teeth, which are replaced by permanent teeth around the age of 7 months.","length":183}'
+let finalObj = JSON.parse(jsonData);
+console.log(finalObj);
