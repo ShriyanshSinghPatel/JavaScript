@@ -128,16 +128,42 @@
 // changeColor("red",1000);
 // changeColor("yellow",2000);
 // changeColor("green",3000);
-function savetoDB(data,success,failure){
-  let internetspeed=Math.floor(Math.random()*10);
+// function savetoDB(data,success,failure){
+//   let internetspeed=Math.floor(Math.random()*10);
+//   if(internetspeed>4){
+//     success()
+//   }else{
+//     failure()
+//   }
+// }
+// savetoDB("shriyansh",()=>{
+//    console.log("good connection - Data Saved Successfully");
+// },()=>{
+//     console.log("bad connection - Data not Saved");
+// });
+
+function savetoDB(data){
+  return new Promise((resolve,reject)=>{
+      let internetspeed=Math.floor(Math.random()*10);
   if(internetspeed>4){
-    success()
+    resolve("data saved")
   }else{
-    failure()
+    reject("week connection")
   }
+  })
 }
-savetoDB("shriyansh",()=>{
-   console.log("good connection - Data Saved Successfully");
-},()=>{
-    console.log("bad connection - Data not Saved");
-});
+savetoDB("shriyansh")
+.then(()=>{
+  console.log("data1 savved");
+  return savetoDB("singh");
+})
+  .then(()=>{
+    console.log("data2 savved");
+    return savetoDB("patel")
+  })
+  .then(()=>{
+    console.log("data3 savved");
+  })
+.catch(()=>{
+  console.log("promise was rejected");
+})
