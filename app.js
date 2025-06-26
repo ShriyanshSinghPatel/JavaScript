@@ -167,6 +167,13 @@
 // .catch(()=>{
 //   console.log("promise was rejected");
 // })
-let jsonData = '{"fact":"Cats have 30 teeth (12 incisors, 10 premolars, 4 canines, and 4 molars), while dogs have 42. Kittens have baby teeth, which are replaced by permanent teeth around the age of 7 months.","length":183}'
-let finalObj = JSON.parse(jsonData);
-console.log(finalObj);
+// let jsonData = '{"fact":"Cats have 30 teeth (12 incisors, 10 premolars, 4 canines, and 4 molars), while dogs have 42. Kittens have baby teeth, which are replaced by permanent teeth around the age of 7 months.","length":183}'
+// let finalObj = JSON.parse(jsonData);
+// console.log(finalObj);
+
+let url = 'https://catfact.ninja/fact'
+fetch(url).then((response)=>{
+    console.log(response);
+}).catch((error)=>{
+    console.log(error)
+})
