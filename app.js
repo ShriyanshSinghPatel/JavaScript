@@ -53,6 +53,8 @@
 // },4000)
 // console.log("hello5");
 
+const data = require("./Fruits");
+
 // let print = function(el){
 //     console.log(el);
 // }
@@ -181,5 +183,8 @@
 // .catch((error)=>{
 //     console.log(error)
 // })
-const objectt = require("./script")
-console.log(objectt.mul(3,5));
+// const objectt = require("./script")
+// console.log(objectt.mul(3,5));
+const allDATA = require("./Fruits")
+console.log(allDATA);
+
