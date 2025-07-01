@@ -181,3 +181,5 @@
 // .catch((error)=>{
 //     console.log(error)
 // })
+const objectt = require("./script")
+console.log(objectt.mul(3,5));
